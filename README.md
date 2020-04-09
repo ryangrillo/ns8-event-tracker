@@ -7,8 +7,21 @@
 - Random timestamp generator: Some records will randomly go into yesterday (see additional notes at the bottom of README).
 
 ## How to Use
-### Build Requirements
-Recommended build process uses Eclipse with Java 8 and Maven.
+### Recommended Build Process (Eclipse IDE)
+Due to the requirements of Java applications, the recommended build process is to use Eclipse with Spring Tools 4 and Java 1.8 JDK.
+
+1. Download and install Java JDK 1.8 from Oracle [Download here](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+2. Download Spring Tools 4 for Eclipse (Alternative would be Spring Tools 4 for Visual Code Studio, but I have not verified the build process) [Download here](https://spring.io/tools)
+
+### Manual Build Process 
+To build the project without Eclipse, use the following steps:
+
+1. Download and install Java JDK 1.8 from Oracle [Download here](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+2. Once installed, confirm that your `JAVA_HOME` is pointing to the correct directory. On Mac, this is most likely `/Library/Java/Home`. If your path is incorrect, set the path to the directory where the JDK was installed using `$ export JAVA_HOME=/path/to/JDK`
+3. Clone this repository and navigate to it.
+4. Install the application: `./mvnw clean install`
+5. Run the applcation: `.mvnw spring-boot:run`
+6. Access Swagger at `localhost:8080/swagger-ui.html`
 
 ### Swagger
 Swagger can be accessed at `localhost:8080/swagger-ui.html`
