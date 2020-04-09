@@ -20,7 +20,7 @@ To build the project without Eclipse, use the following steps:
 2. Once installed, confirm that your `JAVA_HOME` is pointing to the correct directory. On Mac, this is most likely `/Library/Java/Home`. If your path is incorrect, set the path to the directory where the JDK was installed using `$ export JAVA_HOME=/path/to/JDK`
 3. Clone this repository and navigate to it.
 4. Install the application: `./mvnw clean install`
-5. Run the applcation: `.mvnw spring-boot:run`
+5. Run the applcation: `./mvnw spring-boot:run`
 6. Access Swagger at `localhost:8080/swagger-ui.html`
 
 ### Swagger
